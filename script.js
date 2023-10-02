@@ -113,9 +113,10 @@ const audioElement = document.querySelector('#audio');
 
 const tellMe = function (joke) {
 	VoiceRSS.speech({
-		key: '<API key>',
+		key: 'ee959c5296ed41729380cc383bb2c5d4', // hardcoding key in frontend code is about as bad as you can get.  but since you're not deploying this anywhere, no one can see it.  but, just putting this tidbit here because it's vital to know.
 		src: `${joke}`,
 		hl: 'en-US',
+		v: 'Lily',
 		r: 0,
 		c: 'mp3',
 		f: '44khz_16bit_stereo',
